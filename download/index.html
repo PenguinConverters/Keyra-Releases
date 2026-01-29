@@ -1,0 +1,19 @@
+ <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Downloading Keyra...</title>
+    <script>
+      fetch('/keyra/v1/latest.json')
+        .then(r => r.json())
+        .then(data => {
+          window.location.href = data.downloadUrl;
+        })
+        .catch(() => {
+          window.location.href = 'https://github.com/PenguinConverters/Keyra-Releases/releases/latest';
+        });
+    </script>
+  </head>
+  <body>
+    <p>Starting download...</p>
+  </body>
+  </html>

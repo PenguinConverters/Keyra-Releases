@@ -1,8 +1,8 @@
 {
-  "version": "1.0.0.8",
+  "version": "1.0.0.9",
   "releaseDate": "2025-02-02",
   "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/v1.0.0-alpha/Keyra-1.0.0-Setup.msi",
-  "releaseNotes": "Initial alpha release",
+  "releaseNotes": "Alpha release",
   "fileSizeBytes": 272371712,
-  "sha256": "e29372b443213c098c1040debeb22e11175578c9e7838bb8791c45def565ea27"
+  "sha256": "919da1d2bc02329f53b1b6bef44419a6f32be99d6dcfa5bc39c6bacb1079b423"
 }

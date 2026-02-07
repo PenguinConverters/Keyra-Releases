@@ -1,19 +1,53 @@
- <!DOCTYPE html>
-  <html>
-  <head>
-    <title>Downloading Keyra...</title>
-    <script>
-      fetch('/keyra/v1/latest.json')
-        .then(r => r.json())
-        .then(data => {
-          window.location.href = data.downloadUrl;
-        })
-        .catch(() => {
-          window.location.href = 'https://github.com/PenguinConverters/Keyra-Releases/releases/latest';
-        });
-    </script>
-  </head>
-  <body>
-    <p>Starting download...</p>
-  </body>
-  </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download Keyra</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 60px auto; padding: 0 20px; color: #333; }
+    h1 { font-size: 1.5em; }
+    .download-links { margin: 30px 0; }
+    .download-links a { display: inline-block; margin: 8px 12px 8px 0; padding: 12px 24px; background: #0066cc; color: #fff; text-decoration: none; border-radius: 6px; font-size: 1em; }
+    .download-links a:hover { background: #0052a3; }
+    .download-links a.secondary { background: #666; }
+    .download-links a.secondary:hover { background: #555; }
+    .note { color: #666; font-size: 0.9em; margin-top: 20px; }
+    .auto-msg { color: #888; font-size: 0.85em; }
+  </style>
+  <script>
+    fetch('/keyra/v1/latest.json')
+      .then(r => r.json())
+      .then(data => {
+        var ver = document.getElementById('version');
+        if (ver) ver.textContent = 'v' + data.version;
+
+        var linkX64 = document.getElementById('link-x64');
+        var linkX86 = document.getElementById('link-x86');
+
+        if (data.downloads) {
+          if (linkX64 && data.downloads.x64) linkX64.href = data.downloads.x64.downloadUrl;
+          if (linkX86 && data.downloads.x86 && data.downloads.x86.sha256) linkX86.href = data.downloads.x86.downloadUrl;
+          else if (linkX86) linkX86.style.display = 'none';
+        } else if (data.downloadUrl) {
+          if (linkX64) linkX64.href = data.downloadUrl;
+          if (linkX86) linkX86.style.display = 'none';
+        }
+      })
+      .catch(function() {
+        window.location.href = 'https://github.com/PenguinConverters/Keyra-Releases/releases/latest';
+      });
+  </script>
+</head>
+<body>
+  <h1>Download Keyra <span id="version"></span></h1>
+
+  <div class="download-links">
+    <a id="link-x64" href="#">Download for Windows (x64)</a>
+    <a id="link-x86" href="#" class="secondary">Download for Windows (x86)</a>
+  </div>
+
+  <p class="note">
+    Requires .NET 8.0 Desktop Runtime. Supports Windows 7 SP1 and later.<br>
+    Note: YubiKey authentication is available in the x64 version only.
+  </p>
+</body>
+</html>

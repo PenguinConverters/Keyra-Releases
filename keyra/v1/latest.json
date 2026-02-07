@@ -1,17 +1,17 @@
 {
-  "version": "1.0.0.50",
+  "version": "1.0.0.54",
   "releaseDate": "2026-02-07",
   "releaseNotes": "Alpha release with x64 and x86 support",
   "downloads": {
     "x64": {
       "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/v1.0.0-alpha/Keyra-1.0.0-x64-Setup.msi",
       "fileSizeBytes": 12914688,
-      "sha256": "919afd94cee0704c543232fc3a550cf115ffb35b11189d012a6a68ab67be9960"
+      "sha256": "94ed723a11c84712fab9910f5097030f60a639eb3fea26365400a8b49072a030"
     },
     "x86": {
       "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/v1.0.0-alpha/Keyra-1.0.0-x86-Setup.msi",
       "fileSizeBytes": 12500992,
-      "sha256": "996620226fef713df0301e7fee017797ce7401b88ac761f0e3f57bef138068fd"
+      "sha256": "a030a2536e47c1ee488dfa65107ac98ef4fa4becb17320a278801046ff50fd71"
     }
   }
 }

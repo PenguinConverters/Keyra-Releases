@@ -1,17 +1,17 @@
 {
-  "version": "1.0.0.57",
+  "version": "1.0.0.59",
   "releaseDate": "2026-02-08",
   "releaseNotes": "Alpha release with font-enabled decorative formatting.",
   "downloads": {
     "x64": {
       "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/v1.0.0-alpha/Keyra-1.0.0-x64-Setup.msi",
       "fileSizeBytes": 12914688,
-      "sha256": "aa7f5b00285344835a750bbef891be465bb7fb7f2375e6c612dc6eb8def6e5b4"
+      "sha256": "51b1b8991dc2a8c58a4dbfacda336d696fbb6cd4b600e02774ed6ee9633bd95e"
     },
     "x86": {
       "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/v1.0.0-alpha/Keyra-1.0.0-x86-Setup.msi",
       "fileSizeBytes": 12500992,
-      "sha256": "4503e03834307227b4ed8f04b6401b84713084fef04670d2eb2a1eca5561937f"
+      "sha256": "47b3c284a970f4e0943e16064a5f783e0bb2cd8499803c01aeb04a1fd35ecba3"
     }
   }
 }

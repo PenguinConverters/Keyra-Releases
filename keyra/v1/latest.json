@@ -6,12 +6,12 @@
     "x64": {
       "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/1.0.2-Beta/Keyra-1.0.2-x64-Setup.msi",
       "fileSizeBytes": 12914688,
-      "sha256": "ec9a6c92b2953e25614cbad34e38a9be47c54d12a9edea5079adc876dd124ca9"
+      "sha256": "7ec0dbe56697769bc74f7234e72f980e85a2e3ca55e1bfc2142c5527563a84a4"
     },
     "x86": {
       "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/1.0.2-Beta/Keyra-1.0.2-x86-Setup.msi",
       "fileSizeBytes": 12500992,
-      "sha256": "3af39e71b6d1e8433c791614a9d2863f7a6c42040924cab854e394d9d80c118c"
+      "sha256": "f1540df8467232fb740653f4def67df60cc4bc4c2d36b9448b575fdc4fafaf7d"
     }
   }
 }

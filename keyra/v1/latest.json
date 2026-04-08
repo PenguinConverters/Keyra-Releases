@@ -4,14 +4,14 @@
   "releaseNotes": "Beta release with AES-GSM provider.",
   "downloads": {
     "x64": {
-      "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/1.0.2-Beta/Keyra-1.0.2-x64-Setup.msi",
+      "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/1.0.2-Beta/Keyra-1.0.2.5-x64-Setup.msi",
       "fileSizeBytes": 12914688,
-      "sha256": "7ec0dbe56697769bc74f7234e72f980e85a2e3ca55e1bfc2142c5527563a84a4"
+      "sha256": "31b26464633bdd71dc6a4222018ce04b0dc73f36fb2be52c08918fef683801e6"
     },
     "x86": {
-      "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/1.0.2-Beta/Keyra-1.0.2-x86-Setup.msi",
+      "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/1.0.2-Beta/Keyra-1.0.2.5-x86-Setup.msi",
       "fileSizeBytes": 12500992,
-      "sha256": "f1540df8467232fb740653f4def67df60cc4bc4c2d36b9448b575fdc4fafaf7d"
+      "sha256": "f96f7038626f7087eb043cb6fce10bf4d4faca4ebf86b1e7923ef8269b594bd7"
     }
   }
 }

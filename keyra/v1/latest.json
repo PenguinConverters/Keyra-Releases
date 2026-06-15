@@ -4,12 +4,12 @@
   "releaseNotes": "Beta release with AES-GCM provider.",
   "downloads": {
     "x64": {
-      "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/v1.0.2.6/Keyra-1.0.2.6-x64-Setup.msi",
+      "downloadUrl": "https://updates.penguinconverters.ch/keyra/v1/Keyra-1.0.2.6-x64-Setup.msi",
       "fileSizeBytes": 13107200,
       "sha256": "fee1c7e1fe64d2c6fff6342ac920d92ab81b499b81922529f7705ebd926869f0"
     },
     "x86": {
-      "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/v1.0.2.6/Keyra-1.0.2.6-x86-Setup.msi",
+      "downloadUrl": "https://updates.penguinconverters.ch/keyra/v1/Keyra-1.0.2.6-x86-Setup.msi",
       "fileSizeBytes": 12656640,
       "sha256": "8387c6c47e9e0b32b56bed157a7223cbcf49afa2df14b82d1f1898eee841f581"
     }

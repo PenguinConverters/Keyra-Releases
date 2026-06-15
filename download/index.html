@@ -14,7 +14,7 @@
     .auto-msg { color: #888; font-size: 0.85em; }
   </style>
   <script>
-    fetch('/keyra/v1/latest.json')
+    fetch('/keyra/stable/latest.json')
       .then(r => r.json())
       .then(data => {
         var ver = document.getElementById('version');

@@ -1,17 +1,17 @@
 {
-  "version": "1.0.2.5",
-  "releaseDate": "2026-04-09",
-  "releaseNotes": "Beta release with AES-GSM provider.",
+  "version": "1.0.2.6",
+  "releaseDate": "2026-06-15",
+  "releaseNotes": "Beta release with AES-GCM provider.",
   "downloads": {
     "x64": {
-      "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/1.0.2-Beta/Keyra-1.0.2.5-x64-Setup.msi",
-      "fileSizeBytes": 12914688,
-      "sha256": "31b26464633bdd71dc6a4222018ce04b0dc73f36fb2be52c08918fef683801e6"
+      "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/1.0.2-Beta/Keyra-1.0.2.6-x64-Setup.msi",
+      "fileSizeBytes": 13107200,
+      "sha256": "fee1c7e1fe64d2c6fff6342ac920d92ab81b499b81922529f7705ebd926869f0"
     },
     "x86": {
-      "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/1.0.2-Beta/Keyra-1.0.2.5-x86-Setup.msi",
-      "fileSizeBytes": 12500992,
-      "sha256": "f96f7038626f7087eb043cb6fce10bf4d4faca4ebf86b1e7923ef8269b594bd7"
+      "downloadUrl": "https://github.com/PenguinConverters/Keyra-Releases/releases/download/1.0.2-Beta/Keyra-1.0.2.6-x86-Setup.msi",
+      "fileSizeBytes": 12656640,
+      "sha256": "8387c6c47e9e0b32b56bed157a7223cbcf49afa2df14b82d1f1898eee841f581"
     }
   }
 }

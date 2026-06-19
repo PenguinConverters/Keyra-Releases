@@ -1,17 +1,17 @@
 {
   "version": "1.1.0.0",
-  "releaseDate": "2026-06-18",
+  "releaseDate": "2026-06-19",
   "releaseNotes": "Stable release.",
   "downloads": {
     "x64": {
       "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/1.1.0.0/Keyra-1.1.0.0-win-x64-Setup.msi",
-      "fileSizeBytes": 10166272,
-      "sha256": "a6941f045c7f6fc3599c5da07f2f4cc130ee2a41c017c49aab154c12f49f9928"
+      "fileSizeBytes": 10162176,
+      "sha256": "83bcbe509b6eda900e724de732183fe5dba0a4d16263541727b195c204564bfa"
     },
     "x86": {
       "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/1.1.0.0/Keyra-1.1.0.0-win-x86-Setup.msi",
       "fileSizeBytes": 9875456,
-      "sha256": "5ecacc8c4338278b86aec07747471616ff4f8d790854ff3246510d14e4787050"
+      "sha256": "a65f0fc093b681a4a1296738b7a92c857fdd49ef47c5cbb55a0e2b7f54b834ae"
     }
   }
 }

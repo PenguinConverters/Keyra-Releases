@@ -6,12 +6,12 @@
     "x64": {
       "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/1.1.0.0/Keyra-1.1.0.0-win-x64-Setup.msi",
       "fileSizeBytes": 10166272,
-      "sha256": "c4b4ed7017ee3f8e7d8c1935e1aa2450ab0d6a925539ac3b1851eb52a81ce290"
+      "sha256": "3fabf7bbd159b2e1bfae71ce8e2787add1dd98d5ce2c7a0799e2daedee54a41b"
     },
     "x86": {
       "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/1.1.0.0/Keyra-1.1.0.0-win-x86-Setup.msi",
-      "fileSizeBytes": 9879552,
-      "sha256": "1cbb97f2a29ed9209f19b3a66e92e4cea8f197fa6bdb8a0f7d7cc9df17de9cb2"
+      "fileSizeBytes": 9883648,
+      "sha256": "6842a18a1df751c83ccd4f977a3b1a288307cfb16a3b82e8ddd5f83aa1134dcb"
     }
   }
 }

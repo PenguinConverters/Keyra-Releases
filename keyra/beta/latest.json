@@ -1,17 +1,17 @@
 {
   "version": "2.15.0.0",
-  "releaseDate": "2026-07-11",
+  "releaseDate": "2026-08-03",
   "releaseNotes": "Pre-release (beta). Promote to stable to publish to the stable channel.",
   "downloads": {
     "x64": {
       "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/2.15.0.0/Keyra-2.15.0.0-win-x64-Setup.msi",
-      "fileSizeBytes": 10649600,
-      "sha256": "ad008eb0b818113aa7bfbb944bb102e892a044dd12f55c17759ffac12ddba62d"
+      "fileSizeBytes": 10702848,
+      "sha256": "fa999413b339d7fc1284321187fffa7a3cace2c264f459743456b82e052e7252"
     },
     "x86": {
       "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/2.15.0.0/Keyra-2.15.0.0-win-x86-Setup.msi",
-      "fileSizeBytes": 10346496,
-      "sha256": "1831c66e258c2b8ea6bf5784d61bc137960959cdbaf94f925930a7d4eff2d50b"
+      "fileSizeBytes": 10399744,
+      "sha256": "5841ebe35572a91bdd73f6a97bf3a7191f3c42a613788ac052c08b3354e7e31f"
     }
   }
 }

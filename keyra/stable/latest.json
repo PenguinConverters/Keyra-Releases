@@ -1,17 +1,17 @@
 {
-  "version": "2.19.2.0",
+  "version": "2.20.0.0",
   "releaseDate": "2026-08-31",
-  "releaseNotes": "Stable release 2.19.2.0.",
+  "releaseNotes": "Stable release 2.20.0.0.",
   "downloads": {
     "x64": {
-      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/2.19.2.0/Keyra-2.19.2.0-win-x64-Setup.msi",
-      "fileSizeBytes": 11128832,
-      "sha256": "a0e06d1c0de0df8886ffc4db6bb9e45dcccdafe409419fc7c36d6e81ba2c01cc"
+      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/2.20.0.0/Keyra-2.20.0.0-win-x64-Setup.msi",
+      "fileSizeBytes": 11145216,
+      "sha256": "6961ca4a15225f3a6429653832a4c36e478ed6d45a2f8d4f5df13bb6ce4a598c"
     },
     "x86": {
-      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/2.19.2.0/Keyra-2.19.2.0-win-x86-Setup.msi",
-      "fileSizeBytes": 10825728,
-      "sha256": "8c890f32a5aa0052363fc60cc312d0532559e7a57fdc80d3edeed85c3bc4b374"
+      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/2.20.0.0/Keyra-2.20.0.0-win-x86-Setup.msi",
+      "fileSizeBytes": 10842112,
+      "sha256": "d959e89577e94846a348d54c730963a447ac694907e121bed805ccc0df73719a"
     }
   }
 }

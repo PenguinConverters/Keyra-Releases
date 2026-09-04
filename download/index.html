@@ -16,14 +16,6 @@
     .platform { display: none; }
   </style>
   <script>
-    // The published file names, which publish-release.ps1 writes into
-    // keyra/releases/<version>/. The manifest carries a URL for the tarball because that is what
-    // the in-application updater downloads; the .deb and .rpm are published beside it but are not
-    // updater targets, so their URLs are derived from the version here rather than being listed.
-    function releaseFile(version, name) {
-      return 'https://updates.penguinconverters.ch/keyra/releases/' + version + '/' + name;
-    }
-
     fetch('/keyra/stable/latest.json')
       .then(r => r.json())
       .then(data => {
@@ -43,16 +35,29 @@
         }
 
         // Linux is shown only for a release that actually published it. A linux-x64 entry in the
-        // manifest is the signal: releases before Linux support have none, and offering derived
-        // links for one of those would be three buttons that 404.
+        // manifest is the signal: releases before Linux support have none, and offering links for
+        // one of those would be buttons that 404.
+        //
+        // Every URL comes from the manifest, never from the version. Deriving them meant this page
+        // held a second copy of the publisher's naming rule, and a format could be withdrawn -
+        // as the 2.22.0.0 rpm was, for shipping an engine the application refuses to load - while
+        // this page went on offering a link to it. A format absent from `packages` is not offered.
         var linux = data.downloads && data.downloads['linux-x64'];
         if (linux) {
           document.getElementById('linux').style.display = 'block';
-          document.getElementById('link-linux-tar').href = linux.downloadUrl;
-          document.getElementById('link-linux-deb').href =
-            releaseFile(data.version, 'keyra_' + data.version + '_amd64.deb');
-          document.getElementById('link-linux-rpm').href =
-            releaseFile(data.version, 'keyra-' + data.version + '-1.x86_64.rpm');
+
+          // The entry's own downloadUrl is the tarball - the updater's target - and stays the
+          // fallback for a manifest published before `packages` existed.
+          var pkgs = linux.packages || {};
+          var wire = function (id, entry, fallback) {
+            var url = (entry && entry.downloadUrl) || fallback;
+            var el = document.getElementById(id);
+            if (url) { el.href = url; } else { el.style.display = 'none'; }
+          };
+
+          wire('link-linux-deb', pkgs.deb, null);
+          wire('link-linux-rpm', pkgs.rpm, null);
+          wire('link-linux-tar', pkgs.tarball, linux.downloadUrl);
         }
 
         // Lead with the platform the visitor is on. Both sections stay available - this only

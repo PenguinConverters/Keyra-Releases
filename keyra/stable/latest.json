@@ -16,7 +16,19 @@
     "linux-x64": {
       "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/2.22.0.0/keyra-2.22.0.0-linux-x64.tar.gz",
       "fileSizeBytes": 45228478,
-      "sha256": "07ce50b5e3be8bf4ee947839b43736821cc43cdf5153ae159fac2391f3b235dd"
+      "sha256": "07ce50b5e3be8bf4ee947839b43736821cc43cdf5153ae159fac2391f3b235dd",
+      "packages": {
+        "tarball": {
+          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/2.22.0.0/keyra-2.22.0.0-linux-x64.tar.gz",
+          "fileSizeBytes": 45228478,
+          "sha256": "07ce50b5e3be8bf4ee947839b43736821cc43cdf5153ae159fac2391f3b235dd"
+        },
+        "deb": {
+          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/2.22.0.0/keyra_2.22.0.0_amd64.deb",
+          "fileSizeBytes": 37987010,
+          "sha256": "b9729c3181ff963fdbbac2964a968103ed57ef22c312b549976670d11c2b76f8"
+        }
+      }
     }
   }
 }

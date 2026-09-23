@@ -1,37 +1,37 @@
 {
-  "version": "3.1.1.5",
+  "version": "3.1.1.7",
   "releaseDate": "2026-09-22",
   "releaseNotes": "Pre-release (beta). Promote to stable to publish to the stable channel.",
   "downloads": {
     "x64": {
-      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.1.1.5/Keyra-3.1.1.5-win-x64-Setup.msi",
-      "fileSizeBytes": 68227072,
-      "sha256": "c1d8b545dd880a1ab9b36e9a1262e58aee91417d5aeec98d31a3cb988902624c"
+      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.1.1.7/Keyra-3.1.1.7-win-x64-Setup.msi",
+      "fileSizeBytes": 68255744,
+      "sha256": "a47523eb841a83dc3fe741f745f955885a393f866fe5407000d24bb3d4663afb"
     },
     "x86": {
-      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.1.1.5/Keyra-3.1.1.5-win-x86-Setup.msi",
-      "fileSizeBytes": 63262720,
-      "sha256": "d3995398e2df43b878e61ac1be566982727336d2d194ea517beb2f193929b1cf"
+      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.1.1.7/Keyra-3.1.1.7-win-x86-Setup.msi",
+      "fileSizeBytes": 63270912,
+      "sha256": "f413f8e5915e9bf7001d39e6f7492648a1f8b693a2bc423a53b1c7f305fe4b44"
     },
     "linux-x64": {
-      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.1.1.5/keyra-3.1.1.5-linux-x64.tar.gz",
-      "fileSizeBytes": 46284358,
-      "sha256": "e76a0927b30eec2ae04e7a6f93b1bc613b0d01acfb6b13d3b6bd4ae357f3c938",
+      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.1.1.7/keyra-3.1.1.7-linux-x64.tar.gz",
+      "fileSizeBytes": 46294947,
+      "sha256": "a1c9c5797911642a034b19f6a74621b66be7b2b6820d3fd5e7e236c19cd26ac7",
       "packages": {
         "tarball": {
-          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.1.1.5/keyra-3.1.1.5-linux-x64.tar.gz",
-          "fileSizeBytes": 46284358,
-          "sha256": "e76a0927b30eec2ae04e7a6f93b1bc613b0d01acfb6b13d3b6bd4ae357f3c938"
+          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.1.1.7/keyra-3.1.1.7-linux-x64.tar.gz",
+          "fileSizeBytes": 46294947,
+          "sha256": "a1c9c5797911642a034b19f6a74621b66be7b2b6820d3fd5e7e236c19cd26ac7"
         },
         "deb": {
-          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.1.1.5/keyra_3.1.1.5_amd64.deb",
-          "fileSizeBytes": 38755712,
-          "sha256": "a4bf93e912bb34b5a9afc460b2fd4023101f45bf62eb4d3dc9dbb292afc26fd5"
+          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.1.1.7/keyra_3.1.1.7_amd64.deb",
+          "fileSizeBytes": 38765348,
+          "sha256": "096dc922dda495c639fe42f44007adb5bb5288598c3899d37277698ba8c7219b"
         },
         "rpm": {
-          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.1.1.5/keyra-3.1.1.5-1.x86_64.rpm",
-          "fileSizeBytes": 46015203,
-          "sha256": "521e30dea1fea51e4752c78c7212734ab28fb9744c35c970b9b97848fe8ca9c0"
+          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.1.1.7/keyra-3.1.1.7-1.x86_64.rpm",
+          "fileSizeBytes": 46027226,
+          "sha256": "32af6d449cc75b8e319d6e628275a918d37c56308842d52c4e448bc15215f7b9"
         }
       }
     }

@@ -42,6 +42,12 @@
         // held a second copy of the publisher's naming rule, and a format could be withdrawn -
         // as the 2.22.0.0 rpm was, for shipping an engine the application refuses to load - while
         // this page went on offering a link to it. A format absent from `packages` is not offered.
+        var wire = function (id, entry, fallback) {
+          var url = (entry && entry.downloadUrl) || fallback;
+          var el = document.getElementById(id);
+          if (url) { el.href = url; } else { el.style.display = 'none'; }
+        };
+
         var linux = data.downloads && data.downloads['linux-x64'];
         if (linux) {
           document.getElementById('linux').style.display = 'block';
@@ -49,23 +55,32 @@
           // The entry's own downloadUrl is the tarball - the updater's target - and stays the
           // fallback for a manifest published before `packages` existed.
           var pkgs = linux.packages || {};
-          var wire = function (id, entry, fallback) {
-            var url = (entry && entry.downloadUrl) || fallback;
-            var el = document.getElementById(id);
-            if (url) { el.href = url; } else { el.style.display = 'none'; }
-          };
-
           wire('link-linux-deb', pkgs.deb, null);
           wire('link-linux-rpm', pkgs.rpm, null);
           wire('link-linux-tar', pkgs.tarball, linux.downloadUrl);
         }
 
+        // macOS likewise, only for a release that published it. The build is universal and the
+        // publisher enters it under both osx-arm64 and osx-x64, so either names it; the DMG is the
+        // entry's own downloadUrl, the zipped app its `packages.app`.
+        var mac = data.downloads && (data.downloads['osx-arm64'] || data.downloads['osx-x64']);
+        if (mac) {
+          document.getElementById('macos').style.display = 'block';
+          var macPkgs = mac.packages || {};
+          wire('link-macos-dmg', macPkgs.dmg, mac.downloadUrl);
+          wire('link-macos-zip', macPkgs.app, null);
+        }
+
         // Lead with the platform the visitor is on. Both sections stay available - this only
         // decides which is offered first, because a Linux user met by "Download for Windows"
         // reasonably concludes there is no Linux build.
+        var host = document.getElementById('platforms');
         if (linux && /Linux|X11/.test(navigator.userAgent) && !/Android/.test(navigator.userAgent)) {
-          var host = document.getElementById('platforms');
           host.insertBefore(document.getElementById('linux'), document.getElementById('windows'));
+        }
+        // An iPad asking for the desktop site also says Macintosh; it is the one with a touch screen.
+        if (mac && /Macintosh/.test(navigator.userAgent) && !(navigator.maxTouchPoints > 1)) {
+          host.insertBefore(document.getElementById('macos'), document.getElementById('windows'));
         }
       })
       .catch(function() {
@@ -86,6 +101,20 @@
       <p class="note">
         Requires .NET 8.0 Desktop Runtime. Supports Windows 7 SP1 and later.<br>
         Note: YubiKey authentication is available in the x64 version only.
+      </p>
+    </div>
+
+    <div id="macos" class="platform">
+      <h2>macOS (Apple Silicon and Intel)</h2>
+      <div class="download-links">
+        <a id="link-macos-dmg" href="#">Disk image (.dmg)</a>
+        <a id="link-macos-zip" href="#" class="secondary">Application (.zip)</a>
+      </div>
+      <p class="note">
+        One universal app for Apple Silicon and Intel Macs, signed and notarized by Penguin
+        Converters AG. Requires macOS 13 Ventura or later.<br>
+        Git sync uses the <code>git</code> of the Command Line Tools; macOS offers to install them
+        the first time it is needed.
       </p>
     </div>
 

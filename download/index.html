@@ -48,16 +48,34 @@
           if (url) { el.href = url; } else { el.style.display = 'none'; }
         };
 
-        var linux = data.downloads && data.downloads['linux-x64'];
-        if (linux) {
+        // Linux from the stable manifest, else from beta: a release published to beta only still
+        // offers its Linux packages here. With neither, the section stays and points to the
+        // GitHub Releases rather than to buttons that 404.
+        var linuxOf = function (m) { return m && m.downloads && m.downloads['linux-x64']; };
+        var showLinux = function (linux) {
           document.getElementById('linux').style.display = 'block';
-
-          // The entry's own downloadUrl is the tarball - the updater's target - and stays the
-          // fallback for a manifest published before `packages` existed.
+          if (!linux) {
+            ['link-linux-deb', 'link-linux-rpm', 'link-linux-tar'].forEach(function (id) {
+              document.getElementById(id).style.display = 'none';
+            });
+            document.getElementById('link-linux-releases').style.display = 'inline-block';
+            return;
+          }
+          // The entry's own downloadUrl is the tarball and stays the fallback for a manifest
+          // published before `packages` existed.
           var pkgs = linux.packages || {};
           wire('link-linux-deb', pkgs.deb, null);
           wire('link-linux-rpm', pkgs.rpm, null);
           wire('link-linux-tar', pkgs.tarball, linux.downloadUrl);
+        };
+        var linux = linuxOf(data);
+        if (linux) {
+          showLinux(linux);
+        } else {
+          fetch('/keyra/beta/latest.json')
+            .then(function (r) { return r.json(); })
+            .then(function (beta) { showLinux(linuxOf(beta)); })
+            .catch(function () { showLinux(null); });
         }
 
         // macOS likewise, only for a release that published it. The build is universal and the
@@ -75,7 +93,7 @@
         // decides which is offered first, because a Linux user met by "Download for Windows"
         // reasonably concludes there is no Linux build.
         var host = document.getElementById('platforms');
-        if (linux && /Linux|X11/.test(navigator.userAgent) && !/Android/.test(navigator.userAgent)) {
+        if (/Linux|X11/.test(navigator.userAgent) && !/Android/.test(navigator.userAgent)) {
           host.insertBefore(document.getElementById('linux'), document.getElementById('windows'));
         }
         // An iPad asking for the desktop site also says Macintosh; it is the one with a touch screen.
@@ -125,13 +143,17 @@
         <a id="link-linux-deb" href="#">Debian / Ubuntu (.deb)</a>
         <a id="link-linux-rpm" href="#">Fedora / RHEL (.rpm)</a>
         <a id="link-linux-tar" href="#" class="secondary">Portable archive (.tar.gz)</a>
+        <a id="link-linux-releases" href="https://github.com/PenguinConverters/Keyra-Releases/releases" style="display: none;">Linux packages on GitHub</a>
       </div>
       <p class="note">
-        No runtime to install: every Linux build carries its own. It needs GTK 4 and
-        <code>git</code>, which the .deb and .rpm request for you.<br>
-        The packages install to <code>/opt/keyra</code>, add a menu entry, and read machine-wide
-        policy from <code>/etc/keyra/policy.json</code>. The portable archive unpacks anywhere and
-        needs no root, which is what the in-application updater uses.
+        The desktop app <code>keyra</code> and the command line <code>keyra-cli</code>, built for
+        x86-64 Linux with glibc. They need GTK 4, which the .deb and .rpm request for you;
+        <code>git</code> is recommended for Git sync.<br>
+        The packages install to <code>/usr/bin</code>, add a menu entry, open <code>.keyra</code>
+        files, and read machine-wide policy from <code>/etc/keyra/policy.json</code>. A YubiKey
+        works at the desktop and, for members of the group <code>plugdev</code>, from SSH or remote
+        desktop sessions; the installing user is added. The portable archive unpacks anywhere and
+        needs no root.
       </p>
     </div>
   </div>

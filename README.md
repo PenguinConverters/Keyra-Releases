@@ -1,4 +1,23 @@
-# Keyra FAQ
+# Keyra
+
+Keyra is the enterprise secrets manager by Penguin Converters AG. These links always download the
+newest stable release:
+
+| Platform | Download |
+|---|---|
+| Windows (x64) | [Keyra-win-x64-Setup.msi](https://github.com/PenguinConverters/Keyra-Releases/releases/latest/download/Keyra-win-x64-Setup.msi) |
+| Windows (x86) | [Keyra-win-x86-Setup.msi](https://github.com/PenguinConverters/Keyra-Releases/releases/latest/download/Keyra-win-x86-Setup.msi) |
+| Linux, Debian / Ubuntu | [keyra-linux-x64.deb](https://github.com/PenguinConverters/Keyra-Releases/releases/latest/download/keyra-linux-x64.deb) |
+| Linux, Fedora / RHEL | [keyra-linux-x64.rpm](https://github.com/PenguinConverters/Keyra-Releases/releases/latest/download/keyra-linux-x64.rpm) |
+| Linux, portable archive | [keyra-linux-x64.tar.gz](https://github.com/PenguinConverters/Keyra-Releases/releases/latest/download/keyra-linux-x64.tar.gz) |
+| macOS (Apple Silicon and Intel) | [keyra-osx-universal.dmg](https://github.com/PenguinConverters/Keyra-Releases/releases/latest/download/keyra-osx-universal.dmg) or [.zip](https://github.com/PenguinConverters/Keyra-Releases/releases/latest/download/keyra-osx-universal.zip) |
+
+Every version and what changed in it: [Releases](https://github.com/PenguinConverters/Keyra-Releases/releases)
+([feed](https://github.com/PenguinConverters/Keyra-Releases/releases.atom)). Pre-releases there are
+the beta channel. Each installer's SHA-256 is in the channel manifest
+(`keyra/stable/latest.json`, `keyra/beta/latest.json`); the Windows installers are signed.
+
+## FAQ
 
 Frequently asked questions for the Keyra WPF desktop application.
 

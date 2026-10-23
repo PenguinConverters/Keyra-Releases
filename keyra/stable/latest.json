@@ -1,71 +1,71 @@
 {
-  "version": "3.5.0.1",
-  "releaseDate": "2026-10-22",
-  "releaseNotes": "Stable release 3.5.0.1.",
+  "version": "3.5.0.3",
+  "releaseDate": "2026-10-23",
+  "releaseNotes": "Stable release 3.5.0.3.",
   "downloads": {
     "x64": {
-      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.1/Keyra-3.5.0.1-win-x64-Setup.msi",
-      "fileSizeBytes": 63623168,
-      "sha256": "fec0c29851ef75b3fbd6da8c3e595fb05c6671e5c12012e373c6be0948841e78"
+      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.3/Keyra-3.5.0.3-win-x64-Setup.msi",
+      "fileSizeBytes": 63627264,
+      "sha256": "df1208600fb4e54823119b6811064f148afdb01ea6446fe52e589f68bc6b1d87"
     },
     "x86": {
-      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.1/Keyra-3.5.0.1-win-x86-Setup.msi",
-      "fileSizeBytes": 59498496,
-      "sha256": "7c3d7562b1821c14f615a1b23b0d457f9fb4139429f339244037a82d8bc8c615"
+      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.3/Keyra-3.5.0.3-win-x86-Setup.msi",
+      "fileSizeBytes": 59506688,
+      "sha256": "ed672b0d016e8d7ae8ea199043c22df380ea0655fe0393e16b131e8404db2d97"
     },
     "linux-x64": {
-      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.1/keyra-3.5.0.1-linux-x64.tar.gz",
-      "fileSizeBytes": 8438730,
-      "sha256": "b34d45ebde9ef02e19175e752e4db13335ba53287680a405b92d6cc3a7349fdb",
+      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.3/keyra-3.5.0.3-linux-x64.tar.gz",
+      "fileSizeBytes": 8628358,
+      "sha256": "d830339ef269daf705edde41dac1da0020643929bf6c268e5b48f42b606c0a02",
       "packages": {
         "tarball": {
-          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.1/keyra-3.5.0.1-linux-x64.tar.gz",
-          "fileSizeBytes": 8438730,
-          "sha256": "b34d45ebde9ef02e19175e752e4db13335ba53287680a405b92d6cc3a7349fdb"
+          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.3/keyra-3.5.0.3-linux-x64.tar.gz",
+          "fileSizeBytes": 8628358,
+          "sha256": "d830339ef269daf705edde41dac1da0020643929bf6c268e5b48f42b606c0a02"
         },
         "deb": {
-          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.1/keyra_3.5.0.1_amd64.deb",
-          "fileSizeBytes": 6565542,
-          "sha256": "c82f63be871eb1157a8f6bf3ea2c446b22f23aa2863e5b19a8ba9731c8a113db"
+          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.3/keyra_3.5.0.3_amd64.deb",
+          "fileSizeBytes": 6734304,
+          "sha256": "1a9043bf474a6b6eeed6f6b5a70e070582a6c363ce1e572611eca8165f3c3f55"
         },
         "rpm": {
-          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.1/keyra-3.5.0.1-1.x86_64.rpm",
-          "fileSizeBytes": 8401145,
-          "sha256": "19c09597176ef092f828d698f12bcd68767c608354393c3c0025f93a585a96fb"
+          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.3/keyra-3.5.0.3-1.x86_64.rpm",
+          "fileSizeBytes": 8588847,
+          "sha256": "9ed2d70d16fe40d693516df8bb464b8af72111a919e893c6719f82dc5e922c77"
         }
       }
     },
     "osx-arm64": {
-      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.1/keyra-3.5.0.1-osx-universal.dmg",
-      "fileSizeBytes": 19059999,
-      "sha256": "db753bcb760b3a1a933225805a85e7fa28907d829e62b800cd16044cd9cb771f",
+      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.3/keyra-3.5.0.3-osx-universal.dmg",
+      "fileSizeBytes": 19052342,
+      "sha256": "6bfa184380f86e271fffa8c5b4c6ddd29a1730ed07dd2a987f6f579ee6b7376e",
       "packages": {
         "dmg": {
-          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.1/keyra-3.5.0.1-osx-universal.dmg",
-          "fileSizeBytes": 19059999,
-          "sha256": "db753bcb760b3a1a933225805a85e7fa28907d829e62b800cd16044cd9cb771f"
+          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.3/keyra-3.5.0.3-osx-universal.dmg",
+          "fileSizeBytes": 19052342,
+          "sha256": "6bfa184380f86e271fffa8c5b4c6ddd29a1730ed07dd2a987f6f579ee6b7376e"
         },
         "app": {
-          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.1/keyra-3.5.0.1-osx-universal.zip",
-          "fileSizeBytes": 16914037,
-          "sha256": "a818a1f26b44333132fa06fbe2ff2079127c6f4780a3a5c5af9cfaae8bee1580"
+          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.3/keyra-3.5.0.3-osx-universal.zip",
+          "fileSizeBytes": 16965923,
+          "sha256": "c91664696b0010eed128d6b1e0a308222616f9ffec4bc21ad7dca1a1ee21b507"
         }
       }
     },
     "osx-x64": {
-      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.1/keyra-3.5.0.1-osx-universal.dmg",
-      "fileSizeBytes": 19059999,
-      "sha256": "db753bcb760b3a1a933225805a85e7fa28907d829e62b800cd16044cd9cb771f",
+      "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.3/keyra-3.5.0.3-osx-universal.dmg",
+      "fileSizeBytes": 19052342,
+      "sha256": "6bfa184380f86e271fffa8c5b4c6ddd29a1730ed07dd2a987f6f579ee6b7376e",
       "packages": {
         "dmg": {
-          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.1/keyra-3.5.0.1-osx-universal.dmg",
-          "fileSizeBytes": 19059999,
-          "sha256": "db753bcb760b3a1a933225805a85e7fa28907d829e62b800cd16044cd9cb771f"
+          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.3/keyra-3.5.0.3-osx-universal.dmg",
+          "fileSizeBytes": 19052342,
+          "sha256": "6bfa184380f86e271fffa8c5b4c6ddd29a1730ed07dd2a987f6f579ee6b7376e"
         },
         "app": {
-          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.1/keyra-3.5.0.1-osx-universal.zip",
-          "fileSizeBytes": 16914037,
-          "sha256": "a818a1f26b44333132fa06fbe2ff2079127c6f4780a3a5c5af9cfaae8bee1580"
+          "downloadUrl": "https://updates.penguinconverters.ch/keyra/releases/3.5.0.3/keyra-3.5.0.3-osx-universal.zip",
+          "fileSizeBytes": 16965923,
+          "sha256": "c91664696b0010eed128d6b1e0a308222616f9ffec4bc21ad7dca1a1ee21b507"
         }
       }
     }
